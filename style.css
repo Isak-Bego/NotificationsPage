@@ -1,0 +1,179 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    --body-color: #F9FAFE; 
+    --unread-color: #F6FAFD; 
+    --post-color: #686E78; 
+    --group-color: #2A4D7C; 
+    --black: #191B24; 
+    --grey: #BDC2CB; 
+    --lighter-grey: #E8ECF5; 
+}
+
+@font-face {
+    font-family: "JakartaSansExtraBold";
+    src: url(./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+
+@font-face{
+    font-family: "JakartaSansMedium"; 
+    src: url(./assets/fonts/static/PlusJakartaSans-Medium.ttf); 
+}
+
+
+body{
+    font-family: "JakartaSansMedium";
+    background-color: var(--body-color);
+    color: var(--black)
+}
+
+.container{
+    margin: 3em auto; 
+    max-width: 750px; 
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
+
+/* Header section */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__container{
+    font-family: "JakartaSansExtraBold";
+    display: flex;  
+}
+
+.notification__number{
+    margin: auto 0 auto 0.5em; 
+    border-radius: 4px;
+    background-color: var(--group-color);
+    color: white; 
+    padding: 0.075em 0.5em; 
+}
+
+.notification__markAsRead{
+    margin: auto 0 auto auto; 
+    border: 0; 
+    background-color: white;
+    color: var(--post-color); 
+    font-family: "JakartaSansExtraBold";
+}
+
+.notification__markAsRead:hover, 
+.notification__markAsRead:focus{
+    color: var(--group-color); 
+    cursor: pointer; 
+}
+
+
+/* Notification containers */
+
+.notification__container{
+    display: flex;  
+    align-items: flex-start;
+    padding: 1em; 
+    border-radius: 10px;
+}
+
+.notification__container + .notification__container{
+    margin-top: 0.5em; 
+}
+
+.profile__picture__image{ 
+    width: 50px; 
+}
+
+.notification__message{
+    color: var(--post-color); 
+    margin: 0;
+    margin-bottom: 0.3em;  
+}
+
+.notification__duration{
+    color: var(--grey); 
+}
+
+.notification__text{
+    margin-left: 1em; 
+}
+
+.profile__name{
+    color: black; 
+    font-family: "JakartaSansExtraBold";
+}
+
+.action__destination{
+    font-family: "JakartaSansExtraBold";
+}
+
+.profile__name:hover, 
+.profile__name:focus, 
+.action__destination:hover,
+.action__destination:focus{
+    color: var(--group-color); 
+    cursor: pointer; 
+}
+
+.group{
+    color: var(--group-color); 
+}
+
+.post__image{
+    width: 50px; 
+    margin: 0 0 0 auto; 
+}
+
+.post__image:hover, 
+.post__image:focus{
+    cursor: pointer; 
+    background-color: var(--unread-color);
+
+}
+
+.message__text{
+    padding: 1em; 
+    color: var(--post-color); 
+    border: 1px solid var(--lighter-grey); 
+    border-radius: 5px;
+}
+
+.message__text:hover, 
+.message__text:focus{
+    background-color: #E2ECF6;
+    cursor: pointer; 
+}
+
+.unread{
+    background-color: var(--unread-color); 
+    cursor: pointer; 
+}
+
+.orange__ball{
+    width: 10px; 
+    height: 10px; 
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    margin-left: 0.5em; 
+}
+
+.unread .orange__ball{
+    background-color: #DE5150;
+}
+
+
+
+@media (max-width: 500px) {
+    .container{
+        width: 100%; 
+        height: 100%; 
+        border-radius: 0;
+        margin: 0; 
+    }
+
+
+}

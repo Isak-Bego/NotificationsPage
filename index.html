@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+
+  <section class="container">
+    <header>
+      <div class="title__container">
+        <h1 class="section__title">Notifications</h1>
+        <p class="notification__number">3</p>
+      </div>
+      <button class="notification__markAsRead">Mark all as read</button>
+    </header>
+
+
+
+    <div class="notification__container unread" onclick="markAsRead(this)">
+      <img src="./assets/images/avatar-mark-webber.webp" alt="" class="profile__picture__image">
+
+      <div class="notification__text">
+        <div class="notification__message">
+          <span class="profile__name">Mark Webber</span
+          ><span class="action"> reacted to your recent post</span
+          ><span class="action__destination"> My first tournament today!</span>
+          <div class="orange__ball"></div>
+        </div>
+        <span class="notification__duration">1m ago</span>
+      </div>
+    </div>
+
+
+
+    <div class="notification__container unread" onclick="markAsRead(this)">
+      <img src="./assets/images/avatar-angela-gray.webp" alt="" class="profile__picture__image">
+
+      <div class="notification__text">
+        <div class="notification__message">
+          <span class="profile__name">Angela Gray</span
+          ><span class="action"> followed you</span
+          ><span class="action__destination"></span>
+          <div class="orange__ball"></div>
+        </div>
+        <span class="notification__duration">5m ago</span>
+      </div>
+    </div>
+
+
+
+    <div class="notification__container unread" onclick="markAsRead(this)">
+      <img src="./assets/images/avatar-jacob-thompson.webp" alt="" class="profile__picture__image">
+
+      <div class="notification__text">
+        <div class="notification__message">
+          <span class="profile__name">Jacob Thompson</span
+          ><span class="action"> has joined your group</span
+          ><span class="action__destination group"> Chess Club</span>
+          <div class="orange__ball"></div>
+        </div>
+        <span class="notification__duration">1 day ago</span>
+      </div>
+    </div>
+
+
+
+    <div class="notification__container" onclick="markAsRead(this)">
+      <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" class="profile__picture__image">
+
+      <div class="notification__text">
+        <div class="notification__message">
+          <span class="profile__name">Rizky Hasanuddin</span
+          ><span class="action"> sent you a private message</span
+          ><span class="action__destination"></span>
+          <div class="orange__ball"></div>
+        </div>
+        
+        <span class="notification__duration">5 days ago</span>
+  
+        <p class="message__text">
+          Hello, thanks for setting up the Chess Club. I've been a member for a
+          few weeks now and I'm already having lots of fun and improving my game.
+        </p>
+        
+      </div>
+    </div>
+
+
+
+    <div class="notification__container" onclick="markAsRead(this)">
+      <img src="./assets/images/avatar-kimberly-smith.webp" alt="" class="profile__picture__image">
+
+      <div class="notification__text">
+        <div class="notification__message">
+          <span class="profile__name">Kimberly Smith</span
+          ><span class="action"> commented on your picture</span
+          ><span class="action__destination"></span>
+          <div class="orange__ball"></div>
+        </div>
+        <span class="notification__duration">1 week ago</span>
+      </div>
+
+        <img src="assets/images/image-chess.webp" alt="" class="post__image"/>
+    </div>
+
+
+
+    <div class="notification__container" onclick="markAsRead(this)">
+      <img src="./assets/images/avatar-nathan-peterson.webp" alt="" class="profile__picture__image">
+
+      <div class="notification__text">
+        <div class="notification__message">
+          <span class="profile__name">Nathan Peterson</span
+          ><span class="action"> reacted to your recent post</span
+          ><span class="action__destination">
+            5 end-game strategies to increase your win rate</span
+          >
+          <div class="orange__ball"></div>
+        </div>
+        <span class="notification__duration">2 weeks ago</span>
+      </div>
+    </div>
+
+
+
+    <div class="notification__container" onclick="markAsRead(this)">
+      <img src="./assets/images/avatar-anna-kim.webp" alt="" class="profile__picture__image">
+
+      <div class="notification__text">
+        <div class="notification__message">
+          <span class="profile__name">Anna Kim</span
+          ><span class="action"> left the group</span
+          ><span class="action__destination group"> Chess Club</span>
+          <div class="orange__ball"></div>
+        </div>
+        <span class="notification__duration">2 weeks ago</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+  </body>
+</html>
