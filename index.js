@@ -12,6 +12,8 @@ function markAsReadAll(){
 }
 
 function markAsRead(notification){
-    notification.classList.remove("unread"); 
-    notification__number[0].innerHTML--; 
+    if(notification.className == "notification__container unread"){
+        notification.classList.remove("unread"); 
+        notification__number[0].innerHTML--; 
+    }
 }
